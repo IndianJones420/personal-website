@@ -5,6 +5,7 @@ body {
     width: 100vw;    
     margin: 0;
     box-sizing: border-box;
+    flex-grow: 1;
 }
 
 footer {
@@ -40,6 +41,7 @@ nav {
     gap: 10px;
     color:rgb(240, 185, 34) ;
     font-size: x-large;
+    padding-right: 20px;
     
 }
 a {
@@ -48,6 +50,7 @@ a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* all content */
 
 main {
     display: flex;
@@ -74,13 +77,68 @@ h2 {
     font-size: xx-large;
 }
 
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+
+/* home page content */
+
 .quote {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
     padding-left: 2%;
 }
 
-img {
+.homePhoto {
     padding: 2%;
+    width: 65%;
+    
+}
+
+/* about page content */
+
+.about {
+    display: flex;
+    flex-direction: row;
+}
+
+.aboutPhoto {
+    padding: 2%;
+    width: 40%
+}
+
+.aboutLogo {
+    padding: 2%;
+    width: 20%;
+}
+
+/* portfolio page content */
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.portfolioLink {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+.linkPhoto {
+    width: 60%;
+}
+
+/* contact page content */
+
+.contacts {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    gap: 10px;
 }
 
